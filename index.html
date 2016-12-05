@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Example</title>
+  <meta charset="utf-8">
+
+  <!-- Responsive viewport tag, tells small screens that it's responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+	<form class="sign-up-form" action="/signup/" method="post">
+
+		<img src="images/logo.png" alt="logo" class="logo"/>
+
+		<fieldset name="signup">
+			<h1>Sign up</h1>
+			<label for="email" required>Email</label>
+      <input type="email" name='email' id='email' placeholder="foo@bar.com" required/>
+
+      <label for="password" required>Password</label>
+      <input type="password" name='password' id='password' placeholder="1234passw0rd" required />
+
+      <button type='submit'>Sign up</button>
+      <a href="/forgot-password/new">Forgot Password?</a>
+		</fieldset>
+
+		<h2 class="footer">Already have an account? <a href="/login">Log In</a></h2>
+		
+	</form>
+
+</body>
+</html>
